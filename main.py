@@ -1,5 +1,7 @@
 from calculator import *
 
+print("Welcome to Calculator!")
+
 continue_calcs = 'n'
 calculator_running = True
 while calculator_running:
@@ -16,4 +18,5 @@ while calculator_running:
   prompt0 = f"Would you like to continue calculating with {result}? (y/n) or ('q' to quit)\t"
   continue_calcs = input(prompt0).lower()
   if continue_calcs == 'q':
+    print("Goodbye.")
     calculator_running = False
